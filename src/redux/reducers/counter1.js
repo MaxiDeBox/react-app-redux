@@ -1,3 +1,5 @@
+import {ADD, ADD_NUMBER, SUB} from "../actions/actionTypes";
+
 const initionalState = {
   counter: 0
 };
@@ -5,11 +7,11 @@ const initionalState = {
 export default function counter1(state = initionalState, action) {
 
   switch (action.type) {
-    case 'ADD':
+    case ADD:
       return { counter: state.counter + 1 };
-    case 'SUB':
+    case SUB:
       return { counter: state.counter - 1 };
-    case 'ADD_NUMBER':
+    case ADD_NUMBER:
       return { counter: state.counter + action.payload };
     default:
       return state;
