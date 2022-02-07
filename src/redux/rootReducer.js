@@ -4,5 +4,16 @@ const initionalState = {
 
 export default function rootReducer(state = initionalState, action) {
 
+  switch (action.type) {
+    case 'ADD':
+      return {
+        counter: state.counter + 1
+      }
+    case 'SUB':
+      return {
+        counter: state.counter - 1
+      }
+  };
+
   return state;
 }
