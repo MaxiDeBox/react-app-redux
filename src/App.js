@@ -29,7 +29,6 @@ class App extends React.Component {
 }
 
 function mapStateToProps(state) {
-  console.log(state);
   return {
     counter: state.counter1.counter
   };

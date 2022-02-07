@@ -3,11 +3,28 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {createStore} from 'redux';
+import {applyMiddleware, createStore} from 'redux';
 import rootReducer from "./redux/rootReducer";
 import {Provider} from "react-redux";
 
-const store = createStore(rootReducer);
+// function loggerMiddleware(store) {
+//   return function (next) {
+//     return function (action) {
+//       const result = next(action);
+//       console.log('Middleware', store.getState());
+//       return result;
+//     }
+//   }
+// }
+
+// ES6
+const loggerMiddleware = (store) => (next) => (action) => {
+  const result = next(action);
+  console.log('Middleware', store.getState());
+  return result;
+}
+
+const store = createStore(rootReducer, applyMiddleware(loggerMiddleware));
 
 const app = (
   <React.StrictMode>

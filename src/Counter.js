@@ -5,8 +5,8 @@ class Counter extends React.Component {
   render() {
     return (
       <div style={{
-        padding: '20px;',
-        border: '1px solid #ccc'
+        padding: "20px",
+        border: "1px solid #ccc"
       }}>
         <h1>Counter {this.props.counter2}</h1>
         <hr />
