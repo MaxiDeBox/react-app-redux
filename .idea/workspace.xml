@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5caa4c1f-33c3-49c2-bc71-b30b01f623d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/actionTypes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Counter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/counter1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/counter1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/counter2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/counter2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/actions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +18,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Lesson97-8" />
+        <entry key="$PROJECT_DIR$" value="Lesson98-9" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,7 +56,7 @@
       <workItem from="1643639100949" duration="699000" />
       <workItem from="1643777928456" duration="1696000" />
       <workItem from="1643798281215" duration="75000" />
-      <workItem from="1644220420594" duration="5640000" />
+      <workItem from="1644220420594" duration="7042000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1643639244542</created>
@@ -128,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644225258437</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="98. Что такое Action Creator">
+      <created>1644226146840</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1644226146840</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +152,7 @@
     <MESSAGE value="95. Передача параметров | UPD" />
     <MESSAGE value="96. Объединение редюсеров" />
     <MESSAGE value="97. Как работает Middleware" />
-    <option name="LAST_COMMIT_MESSAGE" value="97. Как работает Middleware" />
+    <MESSAGE value="98. Что такое Action Creator" />
+    <option name="LAST_COMMIT_MESSAGE" value="98. Что такое Action Creator" />
   </component>
 </project>

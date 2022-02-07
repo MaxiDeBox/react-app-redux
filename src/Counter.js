@@ -26,9 +26,9 @@ function mapStateToProps(state) {
   };
 }
 
-function mapDispatchToProps(dispath) {
+function mapDispatchToProps(dispatch) {
   return{
-    onChange: (number) => dispath(add2(number)),
+    onChange: (number) => dispatch(add2(number)),
   };
 }
 
