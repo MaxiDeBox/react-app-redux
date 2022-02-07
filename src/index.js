@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {applyMiddleware, createStore} from 'redux';
+import {applyMiddleware, compose, createStore} from 'redux';
 import rootReducer from "./redux/rootReducer";
 import {Provider} from "react-redux";
 import thunk from 'redux-thunk'
+
+const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
 
 // function loggerMiddleware(store) {
 //   return function (next) {
@@ -25,7 +27,7 @@ const loggerMiddleware = (store) => (next) => (action) => {
   return result;
 }
 
-const store = createStore(rootReducer, applyMiddleware(loggerMiddleware, thunk));
+const store = createStore(rootReducer, composeEnhancers(applyMiddleware(loggerMiddleware, thunk)));
 
 const app = (
   <React.StrictMode>
